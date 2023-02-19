@@ -1,0 +1,75 @@
+body {
+    margin:0;
+    padding:0;
+    background:#FFF8F0; 
+
+}
+.name {
+    width: 100%;
+    height: 300px;
+    background: #FFC554;
+    transform: skewY(-5deg);
+
+}
+.name .content {
+    width:50%;
+    height: 50%;
+    position: absolute;
+    left:25%;
+}
+
+.name .content .p-1{
+    color: #FFF8F0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size:60px;
+    transform: skewY(5deg);
+    margin-bottom: 0;
+
+
+}
+
+.name .content .p-2{
+    color: #FFF8F0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:35px;
+    transform: skewY(5deg);
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+}
+
+.info{
+    width:90%;
+    height: auto;
+    background: #FFC554;
+    margin: 5% auto;
+    padding: 20px;
+}
+
+.info .titulodat{
+    color:#FFF8F0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white dashed;
+}
+
+.info .titulohab{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+.info .tituloexp{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
