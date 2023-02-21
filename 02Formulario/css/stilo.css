@@ -64,30 +64,13 @@ body{
      
 }
 
-.buttons{
-    margin-top: 30px;
-    display: inline-flex;
-    height: 60px;
-    text-align: center;
-    
+.register .botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 
 }
-
-.buttons img{
-    float: left;
-}
-
-.buttons button{
-    border-radius:15px;
-    width: 120px;
-    height: 35px;
-    box-align: center;
-}
-
-.buttons p{
-    margin-top: -4px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
