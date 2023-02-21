@@ -8,6 +8,33 @@ body{
     background-image: url('fondo.jpg');
 }
 
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
 .titulo{
     text-align: center;
     font-family: 'Roboto';
@@ -65,8 +92,7 @@ body{
 }
 
 .buttons{
-    margin-top: 30px;
-    display: inline-flex;
+    margin-top: 35px;
     height: 60px;
     text-align: center;
     
@@ -75,13 +101,16 @@ body{
 
 .buttons img{
     float: left;
+    width: 29px;
+    height: 29px;
 }
 
 .buttons button{
-    border-radius:15px;
-    width: 120px;
+    border-radius:20px;
+    width: 130px;
     height: 35px;
-    box-align: center;
+    
+    
 }
 
 .buttons p{
