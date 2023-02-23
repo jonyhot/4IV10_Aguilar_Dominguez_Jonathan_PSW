@@ -91,35 +91,6 @@ body{
      
 }
 
-.buttons{
-    margin-top: 35px;
-    height: 60px;
-    text-align: center;
-    
-
-}
-
-.buttons img{
-    float: left;
-    width: 29px;
-    height: 29px;
-}
-
-.buttons button{
-    border-radius:20px;
-    width: 130px;
-    height: 35px;
-    
-    
-}
-
-.buttons p{
-    margin-top: -4px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .btn{
     
     width: 100%;
