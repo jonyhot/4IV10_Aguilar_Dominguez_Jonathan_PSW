@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src = "./JS/validación.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../01HTML/principal.html">practica 1</a></li>
+        <li><a href="../02Formulario/formulario.html">practica 2</a></li>
+        <li><a href="../03Registro/formularioregistro.html">Practica 3</a></li>
+        <li><a href="../01HTML/curriculum.html">Curriculum</a></li>
+    </ul>
+
+    <div class = "container">
+        <h1>Registrate</h1>
+        <div class = "content-formulario">
+            <form name = "formulario" method = "get" onsubmit = "return validar(this)">
+                <br>
+                <div class="form-input">
+                <label>Nombre: </label>
+                <br>
+                <input type="text" name = "nombre"
+                id = "nombre">
+                <div class="error"></div>
+            </div>
+                <br>
+                <div class="form-input">
+                    <label>Edad: </label>
+                    <br>
+                <input type="number" name = "edad"
+                id = "edad" min = "01" max = "99">
+                <div class="error"></div>
+            </div>
+                <br>
+                <div class="form-input">
+                <label>Fecha de Nacimiento: </label>
+                <br>
+                <input type="date" name = "fecha"
+                id = "miento" max="2023-12-31">
+                <div class="error"></div>
+            </div>
+                <br>
+                <div class="form-input">
+                <label>Email: </label>
+                <br>
+                <input type="email" name = "correo"
+                id = "correo">
+                <div class="error"></div>
+            </div>
+                <br>
+                <div class="form-input">
+                    
+                    <label>He leido y acepto los<a href="#">Términos y condiciones</a></label>
+                    <input align="left" type="checkbox" id="Term&cond">
+                    
+                </div>
+                    <br>
+                <div >
+                    <br>
+                <input class="boton" type="submit" name = "enviar"
+                value = "Enviar Datos del Registro">
+            </div>
+                <br>
+                <div>
+                <input class="boton" type="reset" name = "borrar"
+                value = "Borrar Datos">
+            </div>
+                <br>
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
