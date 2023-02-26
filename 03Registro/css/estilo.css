@@ -6,6 +6,7 @@
     margin: 0;
     background-image: url(./R\ \(4\).jpg);
     font-family: sans-serif;
+    
   }
 
   
@@ -78,11 +79,13 @@
     padding: 30px 50px;
     margin: auto;
     margin-top: 10px;
+    box-shadow:  7px 13px 37px white;
     background: linear-gradient(
       0deg,
       var(--cfondoForm1) 0%,
       var(--cfondoForm2) 50%
     );
+
   }
   
   .form-titulo {
@@ -92,6 +95,7 @@
     margin: 0;
     margin-bottom: 20px;
     letter-spacing: 3px;
+    color:white;
   }
   
   .form-input {
@@ -135,8 +139,8 @@
   }
   
   .form-boton input {
-    background: var(--cnegro);
-    color: var(--cblanco);
+    background: white;
+    color: black;
     padding: 10px 50px;
     font-size: 25px;
     display: block;
