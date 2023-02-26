@@ -4,78 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <script src = "./JS/validación.js"></script>
+    <title>Formulario de registro</title>
+    <script src="./js/validacion.js"></script>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-
-    <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../01HTML/principal.html">practica 1</a></li>
-        <li><a href="../02Formulario/formulario.html">practica 2</a></li>
-        <li><a href="../03Registro/formularioregistro.html">Practica 3</a></li>
-        <li><a href="../01HTML/curriculum.html">Curriculum</a></li>
-    </ul>
-
     <div class = "container">
-        <h1>Registrate</h1>
-        <div class = "content-formulario">
-            <form name = "formulario" method = "get" onsubmit = "return validar(this)">
+        <form class="form" action="">
+            <p class="titulo">Registrate</p>
+            <div class="form-input myname" >
+                <label for="myname">Nombre</label>
                 <br>
-                <div class="form-input">
-                <label>Nombre: </label>
-                <br>
-                <input type="text" name = "nombre"
-                id = "nombre">
-                <div class="error"></div>
+                <input type="text" id="myname">
+                <p class="mensajeError "></p>
             </div>
+            <div  class="form-input edad">
+                <label for="Edad">Edad</label>
                 <br>
-                <div class="form-input">
-                    <label>Edad: </label>
-                    <br>
-                <input type="number" name = "edad"
-                id = "edad" min = "01" max = "99">
-                <div class="error"></div>
+                <input type="number" id="edad">
+                <p></p>
             </div>
+            <div class="form-input nacimiento">
+                <label for="Nacimiento">Fecha de nacimiento</label>
                 <br>
-                <div class="form-input">
-                <label>Fecha de Nacimiento: </label>
-                <br>
-                <input type="date" name = "fecha"
-                id = "miento" max="2023-12-31">
-                <div class="error"></div>
+                <input type="date" id="nacimiento">
+                <p>  </p>
             </div>
+            <div class="form-input email">
+                <label for="email">Correo</label>
                 <br>
-                <div class="form-input">
-                <label>Email: </label>
-                <br>
-                <input type="email" name = "correo"
-                id = "correo">
-                <div class="error"></div>
+                <input type="email" id="email">
+                <p></p>
             </div>
-                <br>
-                <div class="form-input">
-                    
-                    <label>He leido y acepto los<a href="#">Términos y condiciones</a></label>
-                    <input align="left" type="checkbox" id="Term&cond">
-                    
-                </div>
-                    <br>
-                <div >
-                    <br>
-                <input class="boton" type="submit" name = "enviar"
-                value = "Enviar Datos del Registro">
+            <div class="condiciones condiciones">
+                <input type="checkbox" id="condiciones">
+                <label for="condiciones">He ledio y acepto los</label>
+                <a href="#">Terminos y condiciones</a>
+                <p></p>
             </div>
-                <br>
-                <div>
-                <input class="boton" type="reset" name = "borrar"
-                value = "Borrar Datos">
+            <br>
+            <div class="button">
+                <input type="submit" value="Enviar datos">
             </div>
-                <br>
-            
-            </form>
-        </div>
+            <br>
+            <div class="button">
+                <input type="reset" value="Borrar Datos">
+            </div>
+            <p class="mensajeCorrecto">Listo!!!</p>
+        </form>
     </div>
+    <script src="js/validacion.js"></script>
 </body>
 </html>
