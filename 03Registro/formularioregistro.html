@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
-    <script src="./js/validacion.js"></script>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-
     <ul class="menu">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../01HTML/principal.html">practica 1</a></li>
@@ -18,50 +16,44 @@
         <li><a href="../01HTML/curriculum.html">Curriculum</a></li>
     </ul>
     
-    <div class = "container">
-        <form class="form" action="">
-            <p class="titulo">Registrate</p>
-            <div class="form-input myname" >
-                <label for="myname">Nombre</label>
-                <br>
-                <input type="text" id="myname">
-                <p class="mensajeError "></p>
-            </div>
-            <div  class="form-input edad">
-                <label for="Edad">Edad</label>
-                <br>
-                <input type="number" id="edad">
-                <p></p>
-            </div>
-            <div class="form-input nacimiento">
-                <label for="Nacimiento">Fecha de nacimiento</label>
-                <br>
-                <input type="date" id="nacimiento">
-                <p>  </p>
-            </div>
-            <div class="form-input email">
-                <label for="email">Correo</label>
-                <br>
-                <input type="email" id="email">
-                <p></p>
-            </div>
-            <div class="condiciones condiciones">
-                <input type="checkbox" id="condiciones">
-                <label for="condiciones">He ledio y acepto los</label>
-                <a href="#">Terminos y condiciones</a>
-                <p></p>
-            </div>
-            <br>
-            <div class="button">
-                <input type="submit" value="Enviar datos">
-            </div>
-            <br>
-            <div class="button">
-                <input type="reset" value="Borrar Datos">
-            </div>
-            <p class="mensajeCorrecto">Listo!!!</p>
+    <div class="container">
+        <form action="" class="form" id="form" autocomplete="off">
+          <p class="form-titulo">Regístrate</p>
+          <div class="form-input myname">
+            <input type="text" id="myname">
+            <label for="myname">Nombre</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input edad">
+            <input type="number" id="edad">
+            <label for="edad">Edad</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input nacimiento">
+            <input type="number" id="nacimiento" min="1950-01-01" max="2023-12-31">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-input email">
+            <input type="email" id="email">
+            <label for="email">Correo</label>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-termsAndConditions termsAndConditions">
+            <input type="checkbox" id="termsAndConditions">
+            <label for="termsAndConditions">He leído y acepto los </label>
+            <a href="#">Términos y Condiciones</a>
+            <p class="mensajeError"></p>
+          </div>
+          <div class="form-boton" >
+            <input type="submit" value="Enviar">
+          </div>
+          <p class="mensajeCorrecto"></p>
+          <div class="form-boton">
+            <input type="reset" Value="Vaciar datos">
+          </div>
         </form>
-    </div>
-    <script src="js/validacion.js"></script>
-</body>
-</html>
+      </div>
+      <script src="./js/validacion.js"></script>
+    </body>
+    </html>
