@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(./R\ \(4\).jpg);
+    font-family: sans-serif;
+    
+  }
+
+  .titulo{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: black;
+  }
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.container {
+    border: 9px solid black;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #A39B8B;
+  }
+
+  .containerd{
+    border: 4px solid black;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #91AEC1;
+
+  }
+
+  .problema{
+
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .button{
+
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+ 
+   
+  }
+
+  .b{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 12px;
+
+  }
+
+  .c{
+    background: transparent;
+    margin: none;
+    border:none;
+  }
+

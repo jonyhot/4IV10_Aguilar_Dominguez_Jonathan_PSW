@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Interés</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+
+    <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../01HTML/principal.html">practica 1</a></li>
+        <li><a href="../02Formulario/formulario.html">practica 2</a></li>
+        <li><a href="../03Registro/formularioregistro.html">Practica 3</a></li>
+        <li><a href="./principal.html">Problemas JS</a></li>
+        <li><a href="../01HTML/curriculum.html">Curriculum</a></li>
+    </ul>
+
+    <div class = "container">
+        <form method = "get" name = "formulario" action="">
+            <div class="titulo">
+            <h1>Problemas secuenciales</h1>
+            <label>
+            </div>
+            <div class="problema">
+               1) Suponga que un individuo desea invertir su capital en un banco y desea saber cuanto dinero
+                ganara después de un mes si el banco paga a razón de 8.2% mensual.(Cubriendo un maximo de 36 meses)
+                </div>
+                <br>
+                    <form method = "get" id = "problema1" action="">
+
+                        <div class = "containerd">
+                            <table id = "tabla" class = "tablai">
+                                <tr>
+                                    <td>Cantidad a invertir: </td>
+                                    <td><input  class="button"  type="text" id = "cantidad" onkeypress="return validarn(event)"></td>
+                                </tr>
+                                <tr>
+                                    <td>Meses de Inversión: </td>
+                                    <td><input  class="button" type="number" id = "meses" min = "1" max = "36" value = ""></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input  class="b" type="button" name = "inversion" value = "Interés" onclick = "return ints()"></td>
+                                </tr>
+                                <tr>
+                                    <td>Al termino de su inversiín valdrá: </td>
+                                    <td><input class="c" type="text" name = "sueldoi" id = "cantidadi" readonly = "readonly" ></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input  class="b" type="reset" name = "borrar" value = "Borrar Datos" ></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                    <br>
+                           
+            <br>
+    
+    
+            
+            <div class="problema">
+            2) Un vendedor recibe un sueldo base mas un 35% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá 
+            por concepto de comisiones por las cinco ventas que realiza en el mes asimismo se le hace un descuento de un 12% por concepto de inpuesto, par alo cual desea saber cunato recibirá como cobro.
+        </div>
+       <br>
+       <form method = "get" id = "problema2" action="">
+        <div class = "containerd">
+            <table id = "tabla" class = "tablai">
+                <br>
+                <tr>
+                    <td>Sueldo Base: </td>
+                    <td><input  class="button" type="text" id = "sueldo" onkeypress="return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td> Número de ventas al mes: </td>
+                    <td><input  class="button"type="numer" id = "ventas" min="0" max="99" value=""></td>
+                </tr>
+                <tr>
+                    <td>Monto de las Ventas del Mes: </td>
+                    <td><input class="button" type="text" id = "monto_ventas" onkeypress = "return validarn(event)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="b" type="button" name = "sueldo" value = "Calcular" onclick="return sueld()"></td>
+                </tr>
+                <tr>
+                    <td>Comisión de Ventas: </td>
+                    <td><input class="c" type="text" name  = "comisioni" id = "comision_total" readonly = "readonly" ></td>
+                </tr>
+                <tr>
+                    <td>Salario del Mes: </td>
+                    <td><input class="c" type="text" name = "sueldoi" id = "sueldo_total" readonly = "readonly"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input class="b"type="reset" name = "borrar" value = "Borrar Datos"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <br>
+    <div class="problema"> 
+    3) (Ingresar: nombre, marca, tipo, precio del producto. papas:2%, pastelito:10%, lacteo:7.5% ) un cliente desea saber
+    cuanto deberá pagar finalmente por su compra
+    </div>
+    <br>
+    <br>
+    <form method = "get" id = "problema3" action="">
+    <div class="containerd">
+        <table id = "tabla" class = "tablai">
+            <tr>
+                <td>Nombre del Producto: </td>
+                <td><input  class="button" type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td>Marca del Producto: </td>
+                <td><input  class="button"type="text" name="marca" id="marca"></td>
+            </tr>
+            <tr>
+                <td>Tipo de Producto: </td>
+                <td><input  class="button"type="text" name="tipo" id="tipo"></td>
+            </tr>
+            <tr>
+                <td>Precio del producto: </td>
+                <td><input class="button" type="number" name="precio" id="precio" min = "01" max = "999"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="b"  type="button" name="calcular" value="Calcular" onclick="return product()"></td>  
+            </tr>
+            <tr>
+                <td>El total a pagar es de: </td>
+                <td><input class="c"type="text" nombre = "total" id = "total" readonly = "readonly" class = "input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="b"  type="reset" name="borrar" value="Borrar Datos"></td>
+            </tr> 
+        </table>
+    </div>
+</form>
+<br>
+        <div class="problema">
+        4) Un alumno desea saber cual será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+       <br> 55% del promedio de sus tres calificaciones parciales.
+       <br> 30% de la calificación del examen final. <br> 15% de la calificación de un trabajo final.
+    </div>
+        <br>
+        <br>
+        <form method = "get" id = "problema4" action="">
+            <div class = "containerd">
+                <table id = "tabla" class = "tablai">
+                    <tr>
+                        <td>Calificaciones: </td>
+                    </tr>
+                    <tr>
+                        <td>1° Parcial </td>
+                        <td><input class="button"type="number" id = "parcial1" min = "0" max = "10"></td>
+                    </tr>
+                    <tr>
+                        <td>2° Parcial </td>
+                        <td><input class="button"type="number" id = "parcial2" min = "0" max = "10"></td>
+                    </tr>
+                    <tr>
+                        <td>3° Parcial </td>
+                        <td><input class="button"type="number" id = "parcial3" min = "0" max = "10"></td>
+                    </tr>
+                    <tr>
+                        <td>Exámen Final </td>
+                        <td><input class="button"type="number" id = "examenfinal" min = "0" max = "10"></td>
+                    </tr>
+                    <tr>
+                        <td>Trabajo Final </td>
+                        <td><input class="button"type="number" id = "trabajofinal" min = "0" max = "10"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b"type="button" name = "calif" value = "Calificación" onclick = "return calif()"></td>
+                    </tr>
+                    <tr>
+                        <td>La Calificación Final es: </td>
+                        <td><input class="c" type="text" name = "calif" id = "calif_final" readonly = "readonly" class = "input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="reset" name = "borrar" value = "Borar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <div class="problema">
+        5) Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay en un
+        grupo de estudiantes,ambos grupos con porcentaje, apartir de ahi obtener el 100% 
+    </div>
+        <br>
+        <br>
+        <form method = "get" id = "problema5" action="">
+            <div class = "containerd">
+                <table id = "tabla" class = "tablai">
+                    <tr>
+                        <td>Numero de Mujeres</td>
+                        <td><input class="button"type="number" id = "mujeres" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td>Numero de  Hombres</td>
+                        <td><input class="button"type="number" id = "hombres" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="button" name = "porcentaje" value = "Porcentaje" onclick="return fporc()"></td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de Mujeres: </td>
+                        <td><input class="c"type="text" name = "#mujeres" id = "por_mujer" readonly = "readonly" class = "input_text"> </td>
+                    </tr>
+                    <tr>
+                        <td>Porcentaje de Hombres: </td>
+                        <td><input class="c" type="text" name = "#hombres" id = "por_hombre" readonly = "readonly" class = "input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="reset" name = "borrar" value = "Borrar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <div class="problema">
+        6) Realizar un algoritmo que calcule la edad de una persona
+    </div>
+        <br>
+        <br>
+        <form method = "get" id = "problema6" action="">
+            <div class = "containerd">
+                <table id = "tabla" class = "tablai">
+                    <tr>
+                        <td>Fecha de Nacimiento: </td>
+                        <td><input class="button" type="date" id  = "nacimiento"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="button" name  = "edad" value = "Calcular" onclick = "return tedad()"></td>
+                    </tr>
+                    <tr>
+                        <td>Su edad es de: </td>
+                        <td><input class="c"type="text" name  = "edad_1" id  = "edad" readonly  = "readonly" class  = "input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b"type="reset" name  = "borrar" value = "Borrar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <div class="titulo">
+        <h1>Problemas Selectivos Compuestos</h1>
+    </div>
+        <br>
+        <div class="problema">
+        1) Leer 2 números; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume.
+    </div>
+        <br>
+        <form method = "get" id = "problema7" action="">
+            <div class = "containerd">
+                <table id = "tabla" class = "tablai">
+                    <tr>
+                        <td>1° Número: </td>
+                        <td><input class="button" type="number" id  = "num1" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td>2° Número: </td>
+                        <td><input class="button"type="number" id  = "num2" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="button" name = "operacion1" value = "Calcular" onclick = "return dnum()"></td>
+                    </tr>
+                    <tr>
+                        <td>Resultado: </td>
+                        <td><input class="c" type="text" name = "operacion" id = "resultado" readonly = "readonly" class = "input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="reset" name = "borrar" value = "Borrar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <div class="problema">
+        2) Leer tres números diferentes e imprimir el numero mayor de los tres
+    </div>
+        <br>
+        <br>
+        <form method = "get" id = "problema8" action="">
+            <div class = "containerd">
+                <table id = "tabla" class  = "tablai">
+                    <tr>
+                        <td>1° Número: </td>
+                        <td><input class="button" type="number" id = "numero1" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td>2° Número: </td>
+                        <td><input class="button" type="number" id = "numero2" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td>3° Número: </td>
+                        <td><input class="button" type="number" id = "numero3" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b"type="button" name = "oper1" value = "Calcular" onclick = "return tnumeros()"></td>
+                    </tr>
+                    <tr>
+                        <td>El número mayor es: </td>
+                        <td><input class="c" type="text" name = "oper2" id = "mayor" readonly = "readonly" class = "input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="reset" name = "borrar" value = "Borrar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <div class="problema">
+        3) Determinar la cantidad de dinero que recibirá un trabajador por concepto de las horas extras trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de
+        8; si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que se pagan las horas
+        normales y el resto al triple.
+    </div>
+        <br>
+        <br>
+        <form method = "get" id = "problema9"action="">
+            <div class = "containerd">
+                <table id = "tabla" class = "tablai">
+                    <tr>
+                        <td> Número Horas Trabajadas: </td>
+                        <td><input  class="button" type="number" id = "horas_totales" min = "0" max = "99"></td>
+                    </tr>
+                    <tr>
+                        <td>Costo Por Horas Trabajadas: </td>
+                        <td><input class="button" type="text" id = "costo_hora" onkeypress = "return validarn(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="button" name = "oper1" value = "Calcular" onclick = "return horaExtra()"></td>
+                    </tr>
+                    <tr>
+                        <td>  Dinero por Horas Extra: </td>
+                        <td> <input class="c" type="text" name="oper3" id="monto_extra" readonly="readonly" class="input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="b" type="reset" name="borrar" value="Borrar Datos"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <br>
+        <br>               
+        </form>
+        <script src="./JS/interes.js"></script>
+    </div>  
+</body>
+</html>

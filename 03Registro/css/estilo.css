@@ -110,6 +110,7 @@
   }
   
   .form-input input {
+    
     width: 100%;
     border: none;
     outline: none;
@@ -139,6 +140,7 @@
   }
   
   .form-boton input {
+
     background: white;
     color: black;
     padding: 10px 50px;
