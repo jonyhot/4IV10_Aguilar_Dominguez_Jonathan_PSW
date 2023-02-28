@@ -56,7 +56,7 @@ function product(){
 
 
 /*4)*/
-function calif(){
+function califi(){
     var p1 = parseInt(document.getElementById("parcial1").value);
     var p2 = parseInt(document.getElementById("parcial2").value);
     var p3 = parseInt(document.getElementById("parcial3").value);
