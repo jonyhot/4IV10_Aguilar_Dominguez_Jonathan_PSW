@@ -1,3 +1,4 @@
+
 function validarn(e){
   var teclado = (document.all)? e.keyCode : e.which;
   if(teclado == 8) return true;
@@ -15,6 +16,7 @@ var x = document.getElementById("tableData").rows.length;
 for (let i = 1; i < x; i++) {
   document.getElementById("tableData").deleteRow(-1);
 }
+
 }
 
 function f_interes(){
