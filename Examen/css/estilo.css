@@ -9,6 +9,34 @@ body {
     
   }
 
+   
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+
+}
+
+.menu li a:hover{
+    background: #ef8354;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
   :root {
     --cfondo: rgb(207, 211, 212);
     --cfondoForm1: rgba(1, 80, 88, 0.39);
