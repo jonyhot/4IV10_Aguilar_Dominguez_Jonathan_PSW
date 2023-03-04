@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+	background-color: #AB3428;
+    
+  }
+
+  :root {
+    --cfondo: rgb(207, 211, 212);
+    --cfondoForm1: rgba(1, 80, 88, 0.39);
+    --cfondoForm2: rgb(129, 193, 202);
+    --cnegro: black;
+    --ctexto: rgb(14, 81, 88);
+    --ctextoDark: rgb(1, 35, 39);
+    --cblanco: white;
+    --error: rgb(184, 31, 31);
+  }
+
+  .titulo{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color:white;
+  }
+
+  .tablacontainer{
+    /* border: 3px solid green; */
+    border-top: 2px solid var(--cnegro);
+    max-width: 400px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow:  7px 13px 37px white;
+    background: linear-gradient(
+      0deg,
+      var(--cfondoForm1) 0%,
+      var(--cfondoForm2) 50%
+    );
+  }
+
+.tablaamortizacion{
+
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tablaamortizacion th, td{
+	padding: 20px;
+}
+
+.tablaamortizacion thead{
+	background-color: #246355;
+	border-bottom: solid 5px;
+	color: white;
+}
+
+.tablaamortizacion tr:nth-child(even){
+	background-color: #dddd;
+}
+
+.tablaamortizacion  tr:hover{
+	background-color: #369681;
+}
+
+.form-boton input {
+
+    background: white;
+    color: black;
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+  }
+  
