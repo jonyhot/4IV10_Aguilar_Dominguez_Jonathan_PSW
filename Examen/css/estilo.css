@@ -128,7 +128,7 @@ body {
 }
 
 .tablaamortizacion tr:nth-child(even){
-	background-color: #dddd;
+	background-color: rgba(243, 140, 210,0.4);
 }
 
 .tablaamortizacion  tr:hover{
