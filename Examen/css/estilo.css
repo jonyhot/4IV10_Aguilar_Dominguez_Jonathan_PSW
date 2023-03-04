@@ -100,6 +100,31 @@ body {
     );
   }
 
+  .form-input {
+    margin-bottom: 30px;
+  }
+  
+  .form-input label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--ctexto);
+  }
+
+  .form-input input {
+    
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid black;
+  }
+
+  .form-input input:focus + label {
+    font-weight: bold;
+    color: black;
+  }
+
 .tablaamortizacion{
 	text-align: left;
 	border-collapse: collapse;
