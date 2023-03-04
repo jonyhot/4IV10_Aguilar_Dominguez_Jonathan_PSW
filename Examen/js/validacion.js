@@ -154,6 +154,40 @@ function validar(index){
   }
 
 
+  const prestamo = document.getElementById("prestamo");
+const interes = document.getElementById("interes");
+const plazo = document.getElementById("plazo");
+
+  function validacionForm() {
+    form.lastElementChild.innerHTML = "";
+    let condicion = true;
+    listInputs.forEach((element) => {
+      element.lastElementChild.innerHTML = "";
+    });
+  
+    if (prestamo.value.length < 1 || prestamo.value.trim() == "") {
+      mostrarMensajeError("prestamo", "prestamo no valido*");
+      condicion = false;
+    }
+  
+    if (interes.value.length < 1 || interes.value.trim() == "") {
+      mostrarMensajeError("interes", "interes no valido*");
+      condicion = false;
+    }
+
+    if (plazo.value.length < 1 || plazo.value.trim() == "") {
+      mostrarMensajeError("plazo", "plazo no valido*");
+      condicion = false;
+    }
+  
+
+  }
+
+  function mostrarMensajeError(claseInput, mensaje) {
+    let elemento = document.querySelector(`.${claseInput}`);
+    elemento.lastElementChild.innerHTML = mensaje;
+  }
+
 function borrard(){
 
   document.getElementById("tabdelete").reset();
