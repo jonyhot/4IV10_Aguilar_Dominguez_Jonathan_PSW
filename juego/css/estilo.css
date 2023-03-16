@@ -1,0 +1,33 @@
+body {
+  margin:10px; 
+  background-image: url("../imagenes/fondo2.jpg"); 
+}
+
+.container {
+  width:800px;
+  margin:0 auto;
+}
+
+.barra {
+  background-color:#ffff;
+  color: black;
+  font-size: 20px;
+  height: 20px; width: 700px;
+}
+#my_canvas{ 
+  background:#ffff; 
+  border:none 1px solid;
+  border-radius: 20px;
+}
+.boton{
+    color:blue;
+    font-size: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px solid blue;
+}
+.boton:hover{
+    background-color: white;
+    color: black;
+}
